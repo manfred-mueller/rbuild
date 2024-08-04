@@ -48,7 +48,7 @@ jobs:
       max-parallel: 10
       matrix:
         boards: [ rootfs ]
-        suites: [ bookworm ]
+        suites: [ bullseye ]
         flavors: [ xfce ]
     steps:
       - name: Build ${{ matrix.boards }}_${{ matrix.suites }}_${{ matrix.flavors }}
@@ -67,7 +67,7 @@ jobs:
       max-parallel: 10
       matrix:
         boards: [ rock-pi-4b ]
-        suites: [ bookworm ]
+        suites: [ bullseye ]
         flavors: [ xfce ]
         exclude:
           - boards: rootfs
